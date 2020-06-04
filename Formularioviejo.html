@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularioweb</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+    <body>
+<!--formulario de datos del cliente-->
+
+        <h1>HOLA! ¿QUERÉS UNA HAMBURGUESA?</h1>
+            <h2>DEJANOS TUS DATOS DE CONTACTO   :)</h2>
+                <form class="formulario datos" action="">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Nombre" placeholder=" Ej: Franco">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Ej: Garay"><br><br>
+                    <label for="E-mail">E-mail</label>
+                    <input type="email" id="E-mail" name="E-mail" placeholder="nombre@gmail.com"><br><br>
+                    <label for="Dirección">Dirección</label>
+                    <input type="text" id="Dirección" name="Direccion" placeholder="Calle y numeración">
+                    <label for="Barrio">Barrio</label>
+                    <input type="text" id="Barrio" name="Barrio" placeholder="Ej: barrio o zona"><br><br>
+                    <label for="Teléfono">Telefono</label>
+                    <input type="phone" id="Teléfono" name="Teléfono" placeholder="Ej: 351-123456789">
+                    <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento">
+                </form>
+            <!-- Pedido de hamburguesas-->
+            <h2>¿QUE HAMBURGUESA QUERÉS?</h2>
+                <form action="" class="formulario pedido">
+                    <h3>TIPO DE HAMBURGUESA</h3>
+                        <p>Contamos con 3 tipos de hamburguesas,<strong> CARNE, CERDO, y VEGETARIANAS.</strong> <br>Elegí la tuya!</p>
+                            <label for="Seleccionar Combo">Combo</label>
+                            <select name="Combo" id="Selecionar combo">
+                                <optgroup label="CARNE">
+                                    <option value="Carne A"> Hamburguesa de carne sola.</option>
+                                    <option value="Carne B"> Hamburguesa de carne + papas.</option>
+                                    <option value="Carne C"> Hamburguesa de carne + papas + gaseosa.</option>
+                                </optgroup>
+                                <optgroup label="CERDO">
+                                    <option value="Cerdo A"> Hamburguesa de cerdo sola.</option>
+                                    <option value="Cerdo B"> Hamburguesa de cerdo + papas.</option>
+                                    <option value="Cerdo C"> Hamburguesa de cerdo + papas + gaseosa</option>
+                                </optgroup>
+                                <optgroup label="VEGETARIANAS">
+                                    <option value="Lentejas A">Hamburguesa de lenteja sola.</option>
+                                    <option value="Lentejas B">Hamburguesa de lenteja + papas.</option>
+                                    <option value="Lentejas C">Hamburguesa de lenteja + papas + gaseosas.</option>
+                                    <option value="Soja A">Hamburgues de soja sola.</option>
+                                    <option value="Soja B">Hamburguesa de soja + papas.</option>
+                                    <option value="Soja C">Hamburguesa de soja + papas + gaseosa.</option>
+                                </optgroup>
+                            </select>
+                    <h3>TAMAÑO</h3>
+                        <p>Cantidad de medallones.</p>
+                            <label for="S">
+                                S(1)
+                                <input type="radio" name="Tamaño" id="S" value="1 medallón">
+                            </label>
+                            <label for="M">
+                                M
+                                <input type="radio" name="Tamaño" id="M" value="2 medallones">
+                            </label>
+                            <label for="L">
+                                L
+                                <input type="radio" name="Tamaño" id="L" value="3 medallones">
+                            </label>
+                            <label for="XL">
+                                XL
+                                <input type="radio" name="Tamaño" id="XL" value="4 medallones">
+                            </label>
+                            <label for="XXL">
+                                XXL(5)
+                                <input type="radio" name="Tamaño" id="XXl" value="5 medallones">
+                            </label>
+                            <p><em>Todas todas vienen con doble cheddar.<br>Pero vos elegís!</em></p>
+                            <label for="Doble_Cheddar">
+                                Doble cheddar
+                                <input type="radio" name="cantidad de cheddar" id="Doble_Cheddar" value="Doble Cheddar">
+                            </label>
+                            <br>
+                            <label for="Simple_Cheddar">
+                                Sólo uno!
+                                <input type="radio" name="cantidad de cheddar" id="cantidad de cheddar" value="Simple Cheddar">
+                            </label>
+                            <br>
+                            <label for="Sin_Cheddar">
+                                Sin cheddar está bien!
+                                <input type="radio" name="cantidad de cheddar" id="Sin_Cheddar" value="Sin Cheddar">
+                            </label>
+                    <h3>TOPPINGS</h3>
+                        <p>Sentite libre de elegir los que quieras!</p>
+                            <label for="Lechuga">
+                                Lechuga
+                                <input type="checkbox" name="topping" id="Lechuga">
+                            </label>
+                            <label for="Tomate">
+                                Tomate
+                                <input type="checkbox" name="topping" id="Tomate">
+                            </label>
+                            <br>
+                            <label for="Bacon">
+                                Bacon
+                                <input type="checkbox" name="topping" id="Bacon">
+                            </label>
+                            <label for="Cebolla_Morada">
+                                Cebolla Morada
+                                <input type="checkbox" name="topping" id="Cebolla_Morada">
+                            </label>
+                            <br>
+                            <label for="Cebolla_caramelizada">
+                                Cebolla Caramelizada
+                                <input type="checkbox" name="topping" id="Cebolla_caramelizada">
+                            </label>
+                            <label for="Champiñones">
+                                Champiñones
+                                <input type="checkbox" name="topping" id="Champiñones">
+                            </label>
+                            <br>
+                            <label for="Salsa_especial_tipo_casera">
+                                Salsa especial tipo casera
+                                <input type="checkbox" name="topping" id="Salsa_especial_tipo_casera">
+                            </label>
+                            <label for="Ajies_picantes">
+                                Ajies Picantes
+                                <input type="checkbox" name="topping" id="Ajies_picantes">
+                            </label>
+                    </form>
+<!--Regalo opcional-->
+                <div class="regalo opcional"> 
+                    <p>Con tu compra tenemos un regalo especial para vos! Elegilo sin cargo.</p>
+                        <label for="regalo_sin_cargo">
+                            Selecciona tu regalo sin cargo!
+                            <select name="Regalo" id="regalo_sin_cargo">
+                                <option value="Papas fritas.">Papas fritas.</option>
+                                <option value="2 Cervezas.">2 Cervezas.</option>
+                                <option value="Gaseosa 1.5Lt.">Gaseosa 1.5Lt.</option>
+                                <option value="-15% para mi próxima compra.">-15% para mi proxima compra.</option>
+                            </select>
+                        </label>
+                </div>
+<!-- Botones confirmacion y limpiar formulario-->
+                        <div class="botones confirmacion">
+                            <label for="confirmacíon">:)</label>
+                            <input type="submit" name="confirmación" id="confirmación" value="QUIERO MI PEDIDO">
+                            <label for="limpiar formulario">:/</label>
+                            <input type="reset" name="limpiar formulario" id="limpiar formulario" value="EMPEZAR MI PEDIDO DE CERO">
+                        </div>
+                </form>
+            <footer class="pie de pagina">
+                <p>SEGUINOS EN NUESTRAS REDES</p>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Whatsapp</li>
+                </ul>
+            </footer>
+    </body>
+</html>
