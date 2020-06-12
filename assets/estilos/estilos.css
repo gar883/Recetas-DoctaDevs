@@ -2,14 +2,15 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16pt;
 }
-body{
-    background-color: maroon;
-}
 header{
     text-align: center;
     margin: 47px 130px;
 }
+body{
+    background-color: maroon;
+}
 .nav{
+    list-style: none;
     background-color: gray;
     padding: 0px 20px;
     display:flex;
@@ -19,6 +20,51 @@ header{
     padding: 30px 60px;
     border: 5px solid whitesmoke;
     margin: 70px;
+}
+.titulo{
+    color: white;
+    background-color: black;
+    font-size: 60pt;
+}
+.li{
+    margin: 15;
+    font-size: 25pt;
+    font-style: oblique;
+}
+.flex-container{
+    text-align: center;
+    padding: 5px 10%;
+    margin: 5px 10%;
+    margin-left: ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+.bloque{
+    flex-basis: 100%;
+    margin: 5px;
+    border: groove;
+}
+h2{
+    color: black;
+    font-size: 20pt;
+
+}
+h3{
+    margin: 50px;
+    color: black;
+    font-size: 60pt;
+}
+h4{
+    font-size: 35pt;
+    text-align: center;
+}
+section p{
+    margin: 20px;
+    text-align: justify;
+    color: white;
 }
 .pie{
     background-color: black;
@@ -33,16 +79,55 @@ header{
     border: groove 2px grey;
 }
 .rrss{
+    list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
-.titulo{
-    color: white;
-    background-color: black;
-    font-size: 70px;
+.platos-principales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: justify;
 }
-.li{
-    font-size: 20pt;
+.plato-principal-1{
+    margin: 25px 25px;
+    border: white solid 5px;
+    justify-content: center;
+    align-content: center;
+}
+.plato-principal-2{
+    margin: 25px 25px;
+    border: white solid 5px;
+    justify-content: center;
+    align-content: center;
+}
+.postres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: justify;
+}
+.postre1{
+    margin: 25px 25px;
+    border: white solid 5px;
+    justify-content: center;
+    align-content: center;
+}
+.postre2{
+    margin: 25px 25px;
+    border: white solid 5px;
+    justify-content: center;
+    align-content: center;
+}
+.img-plato{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
